@@ -2,25 +2,35 @@
 
 Projeto de site estático para leitura e estudo da Bíblia em português, preparado para hospedagem no Netlify.
 
+## Leitura bíblica
+
+A versão principal do projeto é a **Almeida 1911**, baseada no texto histórico de João Ferreira de Almeida.
+
+O texto é baixado automaticamente durante o build do Netlify para `assets/data/almeida-1911.json`. Assim, depois da publicação, o leitor funciona com o arquivo local e não depende de uma API externa para cada capítulo.
+
+Fonte técnica do arquivo JSON:
+- `barretogustavo/smart-bible-versions`
+- `ALM1911 - Almeida 1911.json`
+
+A documentação de procedência e licença está em `LICENSE-BIBLIA.md`.
+
 ## Estrutura
 
 - `index.html` — página inicial
-- `biblia.html` — leitor de capítulos
-- `salmos.html` — hub dos 150 Salmos
+- `biblia.html` — leitor dos 66 livros
+- `salmos.html` — hub dos Salmos
 - `oracoes.html` — orações editoriais
 - `versiculos.html` e `temas.html` — organização temática
 - `devocionais.html` — reflexões originais
-- `versiculo-do-dia.html` — versículo aleatório
+- `versiculo-do-dia.html` — versículo aleatório usando a Bíblia local
 - páginas legais e de acessibilidade
 - `robots.txt` e `sitemap.xml`
 - `assets/css/style.css` e `assets/js/app.js`
-
-## Fonte bíblica
-
-A primeira versão técnica usa a API Bolls para demonstrar a leitura dinâmica. A documentação da API orienta que quem precisa do texto completo use os arquivos de tradução disponibilizados pelo próprio serviço, em vez de fazer scraping de capítulos. Antes de colocar o projeto em produção e monetização, a licença da tradução escolhida deve ser confirmada e documentada. Para conteúdo em domínio público, a Almeida 1911 é uma alternativa identificada em fontes públicas, mas a implementação precisa usar uma fonte/distribuição compatível com essa licença.
+- `scripts/download-bible.mjs` — prepara a Bíblia no build
+- `netlify.toml` — configuração do build
 
 ## SEO e monetização
 
-O projeto já possui títulos, descrições, canonicals, robots, sitemap, Schema.org básico, links internos, páginas legais, responsividade e espaços estruturais para futura publicidade.
+O projeto possui títulos, descrições, canonicals, robots, sitemap, Schema.org básico, links internos, páginas legais, responsividade e espaços estruturais para futura publicidade.
 
-Não foi criado um `ads.txt` com dados fictícios. Ele deve ser adicionado somente com o identificador real do editor quando o AdSense estiver efetivamente configurado.
+Não foi criado `ads.txt` com dados fictícios. Ele deve ser adicionado somente quando o identificador real do editor estiver configurado.
