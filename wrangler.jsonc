@@ -2,6 +2,9 @@
   "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
   "name": "biblia-online",
   "compatibility_date": "2026-09-15",
+  "build": {
+    "command": "node scripts/download-bible.mjs"
+  },
   "assets": {
     "directory": "."
   }
