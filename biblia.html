@@ -4,21 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Bíblia Online — Almeida 1911</title>
-<meta name="description" content="Leia a Bíblia Online em português pela Almeida 1911. Navegue pelos 66 livros, capítulos e versículos.">
+<meta name="description" content="Leia a Bíblia Online em português pela Almeida 1911. Navegue pelos 66 livros, capítulos e versículos ou pesquise uma passagem.">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://biblia-online.netlify.app/biblia.html">
+<link rel="canonical" href="https://biblia-online.edonemanuelpreviatti2.workers.dev/biblia.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bíblia Online — Almeida 1911">
+<meta property="og:description" content="Leia capítulos da Bíblia em português e pesquise palavras, expressões e referências.">
+<meta property="og:url" content="https://biblia-online.edonemanuelpreviatti2.workers.dev/biblia.html">
 <link rel="stylesheet" href="assets/css/style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Bíblia Online — Almeida 1911","description":"Leitura da Bíblia em português pela Almeida 1911, texto em domínio público."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Bíblia Online — Almeida 1911","description":"Leitura da Bíblia em português pela Almeida 1911, texto histórico em domínio público.","url":"https://biblia-online.edonemanuelpreviatti2.workers.dev/biblia.html","isPartOf":{"@type":"WebSite","name":"Bíblia Online","url":"https://biblia-online.edonemanuelpreviatti2.workers.dev/"}}</script>
 </head>
 <body>
-<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark">✝</span>Bíblia Online</a><button class="menu-toggle" aria-label="Menu">☰</button><nav class="nav"><a href="biblia.html">Bíblia</a><a href="salmos.html">Salmos</a><a href="oracoes.html">Orações</a><a href="versiculos.html">Versículos</a><a href="temas.html">Temas</a></nav></div></header>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Bíblia Online - página inicial"><span class="brand-mark">✝</span><span>Bíblia Online</span></a><button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">☰</button><nav id="main-nav" class="nav" aria-label="Navegação principal"><a href="biblia.html">Bíblia</a><a href="salmos.html">Salmos</a><a href="oracoes.html">Orações</a><a href="versiculos.html">Versículos</a><a href="temas.html">Temas</a><a href="devocionais.html">Devocionais</a></nav></div></header>
 <main class="container section">
 <p class="eyebrow">LEITURA BÍBLICA</p>
 <h1>Bíblia Online</h1>
-<p>Leia os 66 livros da Bíblia pela Almeida 1911.</p>
-<form id="reader-form" class="toolbar"><select id="book" aria-label="Livro"></select><input id="chapter" type="number" min="1" value="23" aria-label="Capítulo"><button type="submit" class="button secondary">Abrir capítulo</button></form>
+<p>Leia os 66 livros da Bíblia pela Almeida 1911 ou encontre rapidamente uma passagem.</p>
+<form id="reader-search" class="search-box" action="biblia.html" method="get" role="search"><label class="sr-only" for="reader-search-input">Pesquisar na Bíblia</label><input id="reader-search-input" name="q" type="search" placeholder="Ex.: amor, fé, João 3:16..." autocomplete="off"><button type="submit">Pesquisar</button></form>
+<form id="reader-form" class="toolbar" aria-label="Abrir capítulo"><select id="book" aria-label="Livro"></select><input id="chapter" type="number" min="1" value="23" aria-label="Capítulo"><button type="submit" class="button secondary">Abrir capítulo</button></form>
 <div class="notice"><strong>Almeida 1911:</strong> texto histórico em domínio público. A Bíblia é carregada localmente no site após o processo de publicação.</div>
-<article id="reader" class="reader"><p class="loading">Carregando capítulo...</p></article>
+<article id="reader" class="reader" aria-live="polite"><p class="loading">Carregando capítulo...</p></article>
 </main>
 <footer class="footer"><div class="container footer-bottom">© 2026 Bíblia Online · <a href="privacidade.html">Privacidade</a> · <a href="termos.html">Termos</a> · <a href="LICENSE-BIBLIA.md">Fonte e licença da Bíblia</a></div></footer>
 <script>
@@ -26,4 +31,5 @@ const names=['','Gênesis','Êxodo','Levítico','Números','Deuteronômio','Josu
 const s=document.getElementById('book');names.slice(1).forEach((n,i)=>{const o=document.createElement('option');o.value=i+1;o.textContent=n;s.appendChild(o)});
 </script>
 <script src="assets/js/app.js" defer></script>
-</body></html>
+</body>
+</html>
