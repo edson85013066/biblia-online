@@ -4,27 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bíblia Online — Leia a Bíblia, Salmos, Orações e Versículos</title>
-  <meta name="description" content="Bíblia Online gratuita em português: leia capítulos, encontre Salmos, pesquise versículos, faça buscas por temas e encontre orações e devocionais.">
+  <meta name="description" content="Bíblia Online gratuita em português: leia a Almeida 1911, encontre Salmos, pesquise versículos e explore orações, temas e devocionais.">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://biblia-online.netlify.app/">
+  <link rel="canonical" href="https://biblia-online.edonemanuelpreviatti2.workers.dev/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Bíblia Online">
-  <meta property="og:description" content="Leia a Bíblia Online, encontre Salmos, versículos por tema, orações e estudos bíblicos.">
-  <meta property="og:url" content="https://biblia-online.netlify.app/">
+  <meta property="og:title" content="Bíblia Online — Leia a Bíblia, Salmos, Orações e Versículos">
+  <meta property="og:description" content="Leia a Bíblia Online, encontre Salmos, versículos por tema, orações e devocionais.">
+  <meta property="og:url" content="https://biblia-online.edonemanuelpreviatti2.workers.dev/">
   <meta name="theme-color" content="#173b6d">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="application/ld+json">{
-    "@context":"https://schema.org","@type":"WebSite","name":"Bíblia Online","url":"https://biblia-online.netlify.app/",
-    "description":"Portal gratuito para leitura e estudo da Bíblia em português.",
-    "potentialAction":{"@type":"SearchAction","target":"https://biblia-online.netlify.app/biblia.html?q={search_term_string}","query-input":"required name=search_term_string"}
-  }</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Bíblia Online","url":"https://biblia-online.edonemanuelpreviatti2.workers.dev/","description":"Portal gratuito para leitura e estudo da Bíblia em português.","potentialAction":{"@type":"SearchAction","target":"https://biblia-online.edonemanuelpreviatti2.workers.dev/biblia.html?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html"><span class="brand-mark">✝</span><span>Bíblia Online</span></a>
-    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-    <nav class="nav" aria-label="Navegação principal">
+    <a class="brand" href="index.html" aria-label="Bíblia Online - página inicial"><span class="brand-mark">✝</span><span>Bíblia Online</span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+    <nav id="main-nav" class="nav" aria-label="Navegação principal">
       <a href="biblia.html">Bíblia</a><a href="salmos.html">Salmos</a><a href="oracoes.html">Orações</a><a href="versiculos.html">Versículos</a><a href="temas.html">Temas</a><a href="devocionais.html">Devocionais</a>
     </nav>
   </div>
@@ -40,7 +36,7 @@
         <input id="q" name="q" type="search" placeholder="Pesquise por versículo, palavra ou referência..." autocomplete="off">
         <button type="submit">Pesquisar</button>
       </form>
-      <div class="quick-links"><a href="biblia.html?ref=joao+3:16">João 3:16</a><a href="biblia.html?ref=salmos+23">Salmos 23</a><a href="biblia.html?ref=salmos+91">Salmos 91</a><a href="biblia.html?ref=1+corintios+13">1 Coríntios 13</a></div>
+      <div class="quick-links" aria-label="Passagens populares"><a href="biblia.html?ref=João+3:16">João 3:16</a><a href="biblia.html?ref=Salmos+23">Salmos 23</a><a href="biblia.html?ref=Salmos+91">Salmos 91</a><a href="biblia.html?ref=1+Coríntios+13">1 Coríntios 13</a></div>
     </div>
   </section>
   <section class="container section">
@@ -54,9 +50,10 @@
   </section>
   <section class="container section split">
     <div><p class="eyebrow">VERSÍCULO DO DIA</p><h2>Uma palavra para o seu dia</h2><blockquote id="daily-verse">Carregando...</blockquote><a class="button secondary" href="versiculo-do-dia.html">Ver versículo do dia</a></div>
-    <div class="info-panel"><h2>Um espaço para leitura</h2><p>O projeto foi pensado para ser rápido, simples e confortável no celular, sem exigir cadastro para acessar a leitura.</p><ul><li>Busca por referência e palavra</li><li>Modo claro e escuro</li><li>Ajuste do tamanho da fonte</li><li>Links internos entre conteúdos</li></ul></div>
+    <div class="info-panel"><h2>Um espaço para leitura</h2><p>Leia sem cadastro, com navegação simples e recursos pensados para celular.</p><ul><li>Busca por palavra, expressão ou referência</li><li>Modo claro e escuro</li><li>Ajuste do tamanho da fonte</li><li>Navegação entre capítulos e links internos</li></ul></div>
   </section>
 </main>
 <footer class="footer"><div class="container footer-grid"><div><strong>Bíblia Online</strong><p>Leitura e conteúdo bíblico em português.</p></div><div><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a><a href="acessibilidade.html">Acessibilidade</a></div></div><div class="container footer-bottom">© 2026 Bíblia Online. Conteúdo e direitos das traduções devem respeitar suas respectivas licenças.</div></footer>
 <script src="assets/js/app.js" defer></script>
-</body></html>
+</body>
+</html>
