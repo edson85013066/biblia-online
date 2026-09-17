@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://biblia-online.netlify.app/sitemap.xml
+Sitemap: https://biblia-online.edonemanuelpreviatti2.workers.dev/sitemap.xml
