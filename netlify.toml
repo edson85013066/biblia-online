@@ -1,6 +1,0 @@
-[build]
-  command = "node scripts/download-bible.mjs"
-  publish = "."
-
-[build.environment]
-  NODE_VERSION = "20"
